@@ -11,17 +11,24 @@
 
 <body>
     <header>
-        <div class="container-special">
+        <div class="container-special mobile-fixed">
             <nav class="row d-flex justify-content-between align-items-center">
-                <div class="col-lg-6 d-flex align-items-center">
-                    <div class="logo"><a href="#"><img src="img/icons/logo.svg" alt="logo mgid"></a></div>
-                    <ul class="d-flex header-menu">
-                        <li><a class="text-2" href="#">Why MGID</a></li>
-                        <li><a class="text-2" href="#">Native ad formats</a></li>
-                        <li><a class="text-2" href="#">Success stories</a></li>
-                    </ul>
+                <div class="col-lg-8 col-12 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center header-menu">
+                        <div class="logo"><a href="#"><img src="img/icons/logo.svg" alt="logo mgid"></a></div>
+                        <ul class="header-list">
+                            <li><a class="text-2" href="#">Why MGID</a></li>
+                            <li><a class="text-2" href="#">Native ad formats</a></li>
+                            <li><a class="text-2" href="#">Success stories</a></li>
+                            <li class="desktop-hidden"><a class="text-2" href="#">Login</a></li>
+                            <li class="desktop-hidden"><a class="text-2 button button-main" href="#">Get Started</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-btn"><span></span></div>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-end align-items-center"><a class="button" href="#">Login</a><a class="button button-main" href="#">Get Started</a></div>
+                <div class="col-lg-4 btns">
+                    <div class="d-flex justify-content-end align-items-center"><a class="button" href="#">Login</a><a class="button button-main" href="#">Get Started</a></div>
+                </div>
             </nav>
         </div>
         <div class="container">
@@ -30,13 +37,14 @@
                     <div class="col-lg-7 content">
                         <div class="title-h1">Launch your ads<br>on 325k+ exclusive placements </div><a class="button button-main" href="#">Get Started </a>
                     </div>
-                    <div class="col-lg-5 d-flex align-items-end justify-content-start"><img class="header-img" src="img/icons/header.png" alt=""></div>
+                    <div class="col-lg-5 d-flex align-items-end justify-content-start"><img class="header-img" src="img/icons/header.png" alt=""><img class="desktop-hidden" src="img/icons/header-mobile.png"></div>
                 </div>
-                <div class="circle circle-1"></div>
-                <div class="circle circle-2"></div>
+                <div class="circle circle-1 parallax" data-rate="-0.3"></div>
+                <div class="circle circle-2 parallax" data-rate="-0.8"> </div>
             </div>
         </div>
     </header>
+    <div class="body-bg parallax" data-rate="-0.3"><img src="img/backgrounds/body.png"></div>
     <section class="includes">
         <div class="container">
             <div class="row">
@@ -47,21 +55,25 @@
             </div>
             <div class="row">
                 <div class="slider-logo col-lg-12">
-                    <div class="row">
-                        <div class="col-lg-2 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-1.png"></div>
-                        <div class="col-lg-2 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-2.png"></div>
-                        <div class="col-lg-2 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-3.png"></div>
-                        <div class="col-lg-2 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-4.png"></div>
-                        <div class="col-lg-2 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-5.png"></div>
-                        <div class="col-lg-2 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-6.png"></div>
+                    <div class="slider-item">
+                        <div class="row">
+                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-1.png"></div>
+                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-2.png"></div>
+                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-3.png"></div>
+                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-4.png"></div>
+                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-5.png"></div>
+                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-6.png"></div>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-2 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-7.png"></div>
-                        <div class="col-lg-2 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-8.png"></div>
-                        <div class="col-lg-2 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-9.png"></div>
-                        <div class="col-lg-2 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-10.png"></div>
-                        <div class="col-lg-2 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-11.png"></div>
-                        <div class="col-lg-2 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-12.png"></div>
+                    <div class="slider-item">
+                        <div class="row">
+                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-7.png"></div>
+                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-8.png"></div>
+                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-9.png"></div>
+                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-10.png"></div>
+                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-11.png"></div>
+                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-12.png"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -76,28 +88,28 @@
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center items">
-                    <div class="col-lg-2 d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-lg-2 col-6 d-flex flex-column justify-content-center align-items-center item">
                         <div class="wrapper-img d-flex align-items-end"><img src="img/icons/blue.png" alt=""></div>
                         <div class="wrapper-text text-center">
                             <div class="number">850<span class="sub-h1">M+ </span></div>
                             <div class="text-2">Unique visitors monthly</div>
                         </div>
                     </div>
-                    <div class="col-lg-2 d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-lg-2 col-6 d-flex flex-column justify-content-center align-items-center item">
                         <div class="wrapper-img d-flex align-items-end"><img src="img/icons/green.png" alt=""></div>
                         <div class="wrapper-text text-center">
                             <div class="number">32<span class="sub-h1">K+</span></div>
                             <div class="text-2">Content websites</div>
                         </div>
                     </div>
-                    <div class="col-lg-2 d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-lg-2 col-6 d-flex flex-column justify-content-center align-items-center item">
                         <div class="wrapper-img d-flex align-items-end"><img src="img/icons/yellow.png" alt=""></div>
                         <div class="wrapper-text text-center">
                             <div class="number">60<span class="sub-h1">%</span></div>
                             <div class="text-2">Average higher CTR than display</div>
                         </div>
                     </div>
-                    <div class="col-lg-2 d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-lg-2 col-6 d-flex flex-column justify-content-center align-items-center item">
                         <div class="wrapper-img d-flex align-items-end"><img src="img/icons/red.png" alt=""></div>
                         <div class="wrapper-text text-center">
                             <div class="number">185<span class="sub-h1">B+</span></div>
@@ -105,46 +117,51 @@
                         </div>
                     </div>
                 </div>
-                <div class="circle circle-1"></div>
-                <div class="circle circle-2"></div>
-                <div class="circle circle-3"></div>
-                <div class="circle circle-4"></div>
+                <div class="circle circle-1 parallax" data-rate="-0.4"></div>
+                <div class="circle circle-2 parallax" data-rate="-0.5"></div>
+                <div class="circle circle-3 parallax" data-rate="-0.3"></div>
+                <div class="circle circle-4 parallax" data-rate="-0.8"></div>
             </div>
         </div>
     </section>
     <section class="ad">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="title-h2">Native ad formats</div>
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="title-h2">Native ad formats</div>
+                    </div>
                 </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <div class="tabs">
-                        <div class="tab-item active">
-                            <div class="title-h4">MGID Smart widget</div>
-                            <div class="tab-content">
-                                <div class="text-1">Gain high engagement rates by pinpointing the most appropriate moment to engage and deliver optimized messages to each user</div><a class="button button-link" href="#">See in Action</a>
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="tabs">
+                            <div class="tab-item active" id="tab-1"><img class="desktop-hidden" src="img/icons/tab-1.png">
+                                <div class="title-h4">MGID Smart widget</div>
+                                <div class="tab-content">
+                                    <div class="text-1">Gain high engagement rates by pinpointing the most appropriate moment to engage and deliver optimized messages to each user</div><a class="button button-link" href="#">See in Action</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="tab-item">
-                            <div class="title-h4">Native widgets</div>
-                            <div class="tab-content">
-                                <div class="text-1">Customizable, responsive and flexible native ad units that will help to tell your brand\'s story</div><a class="button button-link" href="#">See in Action</a>
+                            <div class="tab-item" id="tab-2"><img class="desktop-hidden" src="img/icons/tab-2.png">
+                                <div class="title-h4">Native widgets</div>
+                                <div class="tab-content">
+                                    <div class="text-1">Customizable, responsive and flexible native ad units that will help to tell your brand's story</div><a class="button button-link" href="#">See in Action</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="tab-item">
-                            <div class="title-h4">Native video</div>
-                            <div class="tab-content">
-                                <div class="text-1">Storytell with highly engaging videos placed across MGID’s premium publisher network</div><a class="button button-link" href="#">See in Action</a>
+                            <div class="tab-item" id="tab-3"><img class="desktop-hidden" src="img/icons/tab-3.png">
+                                <div class="title-h4">Native video</div>
+                                <div class="tab-content">
+                                    <div class="text-1">Storytell with highly engaging videos placed across MGID’s premium publisher network</div><a class="button button-link button-simple" href="#">See in Action</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-7">
+                        <div class="tab-imgs"><img class="active tab-image" id="tab-1" src="img/icons/tab-1.png" alt="smart widget"><img class="tab-image" id="tab-2" src="img/icons/tab-2.png" alt="native widgets"><img class="tab-image" id="tab-3" src="img/icons/tab-3.png" alt="native video"></div>
+                    </div>
                 </div>
-                <div class="col-lg-7">
-                    <div class="tab-imgs"><img class="active tab-image" src="img/icons/tab-1.png" alt="smart widget"><img class="tab-image" src="img/icons/tab-2.png" alt="native widgets"><img class="tab-image" src="img/icons/tab-3.png" alt="native video"></div>
-                </div>
+                <div class="circle circle-1 parallax" data-rate="-0.4"></div>
+                <div class="circle circle-2 parallax" data-rate="-0.4"></div>
+                <div class="circle circle-3 parallax" data-rate="-0.4"></div>
             </div>
         </div>
     </section>
@@ -157,22 +174,94 @@
                         <div class="text-1">Driving brandformance for global and local brands</div>
                     </div>
                 </div>
-                <div class="slider">
+                <div class="slider-2">
                     <div class="slider-item">
                         <div class="row align-items-center content">
                             <div class="col-lg-5"><img class="car-logo" src="img/icons/car-logo-1.png" alt="lexus car logo">
-                                <div class="title-h3">Lexus: <span>Recreating luxury for the whole family</span></div>
-                                <div class="text-1">How Lexus used MGID to promote its new car model and increase the number of test-drive bookings.</div>
+                                <div class="title-h3 mobile-hidden">Lexus: <span>Recreating luxury for the whole family</span></div>
+                                <div class="text-1 mobile-hidden">How Lexus used MGID to promote its new car model and increase the number of test-drive bookings.</div>
                             </div>
-                            <div class="col-lg-7 d-flex justify-content-end">
-                                <div class="car"><img src="img/photos/car-1.png" alt="lexus car">
+                            <div class="col-lg-7 d-flex justify-content-end content-2">
+                                <div class="car"><img class="desktop-hidden" src="img/icons/car-logo-1.png"><img src="img/photos/car-1.png" alt="lexus car">
                                     <div class="car-bg"></div>
+                                </div>
+                                <div class="desktop-hidden">
+                                    <div class="title-h3">Lexus: <span>Recreating luxury for the whole family</span></div>
+                                    <div class="text-1">How Lexus used MGID to promote its new car model and increase the number of test-drive bookings.</div>
                                 </div>
                             </div>
                         </div>
                         <div class="row d-flex justify-content-between statistic">
-                            <div class="col-lg-3"><a class="button button-simple" href="#">rEAD mORE</a></div>
-                            <div class="col-lg-9 d-flex">
+                            <div class="col-lg-3 statistic-content"><a class="button button-simple" href="#">rEAD mORE</a></div>
+                            <div class="col-lg-9 d-flex statistic-content">
+                                <div class="statistic-item">
+                                    <div class="sub-h1">0.5%</div>
+                                    <div class="sub-h2">CTR</div>
+                                </div>
+                                <div class="statistic-item">
+                                    <div class="sub-h1">4,175</div>
+                                    <div class="sub-h2">Clicks</div>
+                                </div>
+                                <div class="statistic-item">
+                                    <div class="sub-h1">2,345,246</div>
+                                    <div class="sub-h2">Monthly impressions</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="row align-items-center content">
+                            <div class="col-lg-5"><img class="car-logo" src="img/icons/car-logo-1.png" alt="lexus car logo">
+                                <div class="title-h3 mobile-hidden">Lexus: <span>Recreating luxury for the whole family</span></div>
+                                <div class="text-1 mobile-hidden">How Lexus used MGID to promote its new car model and increase the number of test-drive bookings.</div>
+                            </div>
+                            <div class="col-lg-7 d-flex justify-content-end content-2">
+                                <div class="car"><img class="desktop-hidden" src="img/icons/car-logo-1.png"><img src="img/photos/car-1.png" alt="lexus car">
+                                    <div class="car-bg"></div>
+                                </div>
+                                <div class="desktop-hidden">
+                                    <div class="title-h3">Lexus: <span>Recreating luxury for the whole family</span></div>
+                                    <div class="text-1">How Lexus used MGID to promote its new car model and increase the number of test-drive bookings.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-between statistic">
+                            <div class="col-lg-3 statistic-content"><a class="button button-simple" href="#">rEAD mORE</a></div>
+                            <div class="col-lg-9 d-flex statistic-content">
+                                <div class="statistic-item">
+                                    <div class="sub-h1">0.5%</div>
+                                    <div class="sub-h2">CTR</div>
+                                </div>
+                                <div class="statistic-item">
+                                    <div class="sub-h1">4,175</div>
+                                    <div class="sub-h2">Clicks</div>
+                                </div>
+                                <div class="statistic-item">
+                                    <div class="sub-h1">2,345,246</div>
+                                    <div class="sub-h2">Monthly impressions</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="row align-items-center content">
+                            <div class="col-lg-5"><img class="car-logo" src="img/icons/car-logo-1.png" alt="lexus car logo">
+                                <div class="title-h3 mobile-hidden">Lexus: <span>Recreating luxury for the whole family</span></div>
+                                <div class="text-1 mobile-hidden">How Lexus used MGID to promote its new car model and increase the number of test-drive bookings.</div>
+                            </div>
+                            <div class="col-lg-7 d-flex justify-content-end content-2">
+                                <div class="car"><img class="desktop-hidden" src="img/icons/car-logo-1.png"><img src="img/photos/car-1.png" alt="lexus car">
+                                    <div class="car-bg"></div>
+                                </div>
+                                <div class="desktop-hidden">
+                                    <div class="title-h3">Lexus: <span>Recreating luxury for the whole family</span></div>
+                                    <div class="text-1">How Lexus used MGID to promote its new car model and increase the number of test-drive bookings.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-between statistic">
+                            <div class="col-lg-3 statistic-content"><a class="button button-simple" href="#">rEAD mORE</a></div>
+                            <div class="col-lg-9 d-flex statistic-content">
                                 <div class="statistic-item">
                                     <div class="sub-h1">0.5%</div>
                                     <div class="sub-h2">CTR</div>
@@ -245,23 +334,23 @@
                         <li><img src="img/icons/footer-company-logo-7.png" alt=""></li>
                     </ul>
                 </div>
-                <div class="col-lg-6 d-flex align-items-center justify-content-end">
+                <div class="col-lg-6 d-flex align-items-center awards">
                     <div class="text-2">Innovative Ad Network</div>
-                    <div class="awards"><img src="img/icons/awards.png" alt=""></div>
+                    <div class="awards-img"><img src="img/icons/awards.png" alt=""></div>
                 </div>
             </div>
             <div class="row align-items-center footer-bottom">
-                <div class="col-lg-4">
+                <div class="col-lg-4 footer-col">
                     <div class="sub-h2 rights">© 2020 MGID Inc. All rights reserved.</div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 footer-col">
                     <ul class="footer-menu d-flex justify-content-center footer-menu">
                         <li><a class="sub-h2" href="#">Privacy Policy</a></li>
                         <li><a class="sub-h2" href="#">Terms of Service</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
-                    <ul class="d-flex justify-content-end align-items-center footer-social">
+                <div class="col-lg-4 footer-col">
+                    <ul class="d-flex align-items-center footer-social">
                         <li><a href="#"><img src="img/icons/social-1.png" alt=""></a></li>
                         <li><a href="#"><img src="img/icons/social-2.png" alt=""></a></li>
                         <li><a href="#"><img src="img/icons/social-3.png" alt=""></a></li>
@@ -273,7 +362,6 @@
         </div>
     </footer>
 </body>
-<script src="js/libs.js"></script>
 <script src="js/index.js"></script>
 
 </html>
