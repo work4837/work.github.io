@@ -11,355 +11,430 @@
     <link rel="preload" href="fonts/Averta CY/Semibold/Averta-Semibold.woff" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/DIN Alternate Bold/DINAlternate-Bold.woff" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#0000cc">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container-special mobile-fixed">
-            <nav class="row d-flex justify-content-between align-items-center">
+            <nav class="row d-flex justify-content-between align-items-center header__nav">
                 <div class="col-lg-8 col-12 d-flex align-items-center justify-content-between">
-                    <div class="d-flex align-items-center header-menu">
-                        <div class="logo"><a href="#"><img src="img/icons/logo.svg" alt="logo mgid"></a></div>
-                        <ul class="header-list">
-                            <li><a class="text-2" href="#">Why MGID</a></li>
-                            <li><a class="text-2" href="#">Native ad formats</a></li>
-                            <li><a class="text-2" href="#">Success stories</a></li>
-                            <li class="desktop-hidden"><a class="text-2" href="#">Login</a></li>
-                            <li class="desktop-hidden"><a class="text-2 button button-main" href="#">Get Started</a></li>
+                    <div class="d-flex align-items-center">
+                        <div class="header__logo logo"><a class="header__link" href="#"><img class="header__link-img" src="img/icons/logo.svg" alt="logo mgid"></a></div>
+                        <ul class="header__menu">
+                            <li class="header__menu-item"><a class="header__menu-link text-2" href="#whymgid">Why MGID</a></li>
+                            <li class="header__menu-item"><a class="header__menu-link text-2" href="#formats">Native ad formats</a></li>
+                            <li class="header__menu-item"><a class="header__menu-link text-2" href="#story">Success stories</a></li>
+                            <li class="header__menu-item desktop-hidden"><a class="header__menu-link text-2" href="#">Login</a></li>
+                            <li class="header__menu-item desktop-hidden"><a class="header__menu-link text-2 button button-main" href="#">Get Started</a></li>
                         </ul>
                     </div>
-                    <div class="menu-btn"><span></span></div>
+                    <div class="header__menu-btn"><span></span></div>
                 </div>
-                <div class="col-lg-4 btns">
-                    <div class="d-flex justify-content-end align-items-center"><a class="button" href="#">Login</a><a class="button button-main" href="#">Get Started</a></div>
+                <div class="col-lg-4 header__btns">
+                    <div class="d-flex justify-content-end align-items-center"><a class="header__btn button" href="#">Login</a><a class="header__btn button button-main" href="#">Get Started</a></div>
                 </div>
             </nav>
         </div>
         <div class="container">
             <div class="wrapper">
                 <div class="row">
-                    <div class="col-lg-7 content">
-                        <div class="title-h1">Launch your ads<br>on 325k+ exclusive placements </div><a class="button button-main" href="#">Get Started </a>
+                    <div class="col-lg-7 header__content">
+                        <h1 class="header__title title-h1">Launch your ads<br>on 325k+ exclusive placements </h1><a class="header__btn button button-main" href="#">Get Started </a>
                     </div>
-                    <div class="col-lg-5 d-flex align-items-end justify-content-start"><img class="header-img" src="img/icons/header.png" alt=""><img class="desktop-hidden" src="img/icons/header-mobile.png"></div>
+                    <div class="col-lg-5 header__bg"><img class="header__bg-img fly-animation" src="img/icons/iphone-1.svg" alt=""><img class="header__bg-img" src="img/icons/iphone-2.svg"></div>
                 </div>
-                <div class="circle circle-1 parallax" data-rate="-0.3"></div>
-                <div class="circle circle-2 parallax" data-rate="-0.8"> </div>
+                <div class="header__circle circle header__circle--1 parallax" data-rate="-0.3"></div>
+                <div class="header__circle circle header__circle--2 parallax" data-rate="-0.8"> </div>
             </div>
         </div>
     </header>
-    <div class="body-bg parallax" data-rate="-0.3"><img src="img/backgrounds/body.svg"></div>
-    <section class="includes">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="sub-h2">Solutions for ADVISORS</div>
-                    <div class="title-h2">MGID’s exclusive publisher network includes:</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="slider-logo col-lg-12">
-                    <div class="slider-item">
-                        <div class="row">
-                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-1.svg"></div>
-                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-2.svg"></div>
-                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-3.svg"></div>
-                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-4.svg"></div>
-                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-5.svg"></div>
-                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-6.svg"></div>
-                        </div>
-                    </div>
-                    <div class="slider-item">
-                        <div class="row">
-                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-7.svg"></div>
-                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-8.svg"></div>
-                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-9.svg"></div>
-                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-10.svg"></div>
-                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-11.svg"></div>
-                            <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center"><img src="img/icons/company-logo-12.svg"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="statistic">
-        <div class="container-special">
-            <div class="wrapper">
+    <main class="main">
+        <div class="main__bg parallax" data-rate="-0.3"><img src="img/backgrounds/body.svg"></div>
+        <section class="includes">
+            <div class="container">
                 <div class="row">
-                    <div class="col-12 text-center">
-                        <div class="title-h2">Scale your efficiency with MGID</div>
+                    <div class="col-lg-8">
+                        <div class="includes__subtitle sub-h2">Solutions for advertisers</div>
+                        <h2 class="includes__title title-h2">MGID’s exclusive publisher network includes:</h2>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center items">
-                    <div class="col-lg-2 col-6 d-flex flex-column justify-content-center align-items-center item">
-                        <div class="wrapper-img d-flex align-items-end"><img src="img/icons/blue.png" alt=""></div>
-                        <div class="wrapper-text text-center">
-                            <div class="number">850<span class="sub-h1">M+ </span></div>
-                            <div class="text-2">Unique visitors monthly</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-6 d-flex flex-column justify-content-center align-items-center item">
-                        <div class="wrapper-img d-flex align-items-end"><img src="img/icons/green.png" alt=""></div>
-                        <div class="wrapper-text text-center">
-                            <div class="number">32<span class="sub-h1">K+</span></div>
-                            <div class="text-2">Content websites</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-6 d-flex flex-column justify-content-center align-items-center item">
-                        <div class="wrapper-img d-flex align-items-end"><img src="img/icons/yellow.png" alt=""></div>
-                        <div class="wrapper-text text-center">
-                            <div class="number">60<span class="sub-h1">%</span></div>
-                            <div class="text-2">Average higher CTR than display</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-6 d-flex flex-column justify-content-center align-items-center item">
-                        <div class="wrapper-img d-flex align-items-end"><img src="img/icons/red.png" alt=""></div>
-                        <div class="wrapper-text text-center">
-                            <div class="number">185<span class="sub-h1">B+</span></div>
-                            <div class="text-2">Content recommendations monthly</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="circle circle-1 parallax" data-rate="-0.4"></div>
-                <div class="circle circle-2 parallax" data-rate="-0.5"></div>
-                <div class="circle circle-3 parallax" data-rate="-0.3"></div>
-                <div class="circle circle-4 parallax" data-rate="-0.8"></div>
-            </div>
-        </div>
-    </section>
-    <section class="ad">
-        <div class="container">
-            <div class="wrapper">
                 <div class="row">
-                    <div class="col-12 text-center">
-                        <div class="title-h2">Native ad formats</div>
+                    <div class="includes__slider col-lg-12">
+                        <div class="includes__slider-item">
+                            <div class="row">
+                                <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center includes__slider-img"><img src="img/icons/company-logo-1.svg"></div>
+                                <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center includes__slider-img"><img src="img/icons/company-logo-2.svg"></div>
+                                <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center includes__slider-img"><img src="img/icons/company-logo-3.svg"></div>
+                                <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center includes__slider-img"><img src="img/icons/company-logo-4.svg"></div>
+                                <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center includes__slider-img"><img src="img/icons/company-logo-5.svg"></div>
+                                <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center includes__slider-img"><img src="img/icons/company-logo-6.svg"></div>
+                            </div>
+                        </div>
+                        <div class="includes__slider-item">
+                            <div class="row">
+                                <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center includes__slider-img"><img src="img/icons/company-logo-7.svg"></div>
+                                <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center includes__slider-img"><img src="img/icons/company-logo-8.svg"></div>
+                                <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center includes__slider-img"><img src="img/icons/company-logo-9.svg"></div>
+                                <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center includes__slider-img"><img src="img/icons/company-logo-10.svg"></div>
+                                <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center includes__slider-img"><img src="img/icons/company-logo-11.svg"></div>
+                                <div class="col-lg-2 col-6 d-flex justify-content-center aligm-items-center includes__slider-img"><img src="img/icons/company-logo-12.svg"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <div class="tabs">
-                            <div class="tab-item active" id="tab-1"><img class="desktop-hidden" src="img/icons/tab-1.png">
-                                <div class="title-h4">MGID Smart widget</div>
-                                <div class="tab-content">
-                                    <div class="text-1">Gain high engagement rates by pinpointing the most appropriate moment to engage and deliver optimized messages to each user</div><a class="button button-link" href="#">See in Action</a>
+            </div>
+        </section>
+        <section class="statistic" id="whymgid">
+            <div class="container-special">
+                <div class="statistic__wrapper wrapper">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="statistic__title title-h2">Scale your efficiency with MGID</h2>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center statistic__items">
+                        <div class="col-lg-2 col-6 d-flex flex-column justify-content-center align-items-center statistic__item">
+                            <div class="statistic__item-img d-flex align-items-end"><img src="img/icons/blue.png" alt=""></div>
+                            <div class="statistic__item-content text-center">
+                                <div class="statistic__number number">850<span class="statistic__item-subtitle sub-h1">M+ </span></div>
+                                <div class="statistic__item-text text-2">Unique visitors monthly</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-6 d-flex flex-column justify-content-center align-items-center statistic__item">
+                            <div class="statistic__item-img d-flex align-items-end"><img src="img/icons/green.png" alt=""></div>
+                            <div class="statistic__item-content text-center">
+                                <div class="statistic__number number">32<span class="statistic__item-subtitle sub-h1">K+</span></div>
+                                <div class="statistic__item-text text-2">Content websites</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-6 d-flex flex-column justify-content-center align-items-center statistic__item">
+                            <div class="statistic__item-img d-flex align-items-end"><img src="img/icons/yellow.png" alt=""></div>
+                            <div class="statistic__item-content text-center">
+                                <div class="statistic__number number">60<span class="statistic__item-subtitle sub-h1">%</span></div>
+                                <div class="statistic__item-text text-2">Average higher CTR than display</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-6 d-flex flex-column justify-content-center align-items-center statistic__item">
+                            <div class="statistic__item-img d-flex align-items-end"><img src="img/icons/red.png" alt=""></div>
+                            <div class="statistic__item-content text-center">
+                                <div class="statistic__number number">185<span class="statistic__item-subtitle sub-h1">B+</span></div>
+                                <div class="statistic__item-text text-2">Content recommendations monthly</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statistic__circle statistic__circle--1 circle parallax" data-rate="-0.4"></div>
+                    <div class="statistic__circle statistic__circle--2 circle parallax" data-rate="-0.5"></div>
+                    <div class="statistic__circle statistic__circle--3 circle parallax" data-rate="-0.3"></div>
+                    <div class="statistic__circle statistic__circle--4 circle parallax" data-rate="-0.8"> </div>
+                </div>
+            </div>
+        </section>
+        <section class="formats" id="formats">
+            <div class="container">
+                <div class="formats__wrapper wrapper">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="formats__title title-h2">Native ad formats </h2>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <div class="formats__tabs">
+                                <div class="formats__tabs-item formats-tab active" id="tab-1"><img class="desktop-hidden" src="img/icons/tab-1.svg">
+                                    <div class="formats-tab__title title-h4">MGID Smart widget </div>
+                                    <div class="formats-tab__content">
+                                        <div class="formats-tab__text text-1">Gain high engagement rates by pinpointing the most appropriate moment to engage and deliver optimized messages to each user</div><a class="formats-tab__btn button button-link" href="#">See in Action</a>
+                                    </div>
+                                </div>
+                                <div class="formats__tabs-item formats-tab" id="tab-2"> <img class="desktop-hidden" src="img/icons/tab-2.svg">
+                                    <div class="formats-tab__title title-h4">Native widgets</div>
+                                    <div class="formats-tab__content">
+                                        <div class="formats-tab__text text-1">Customizable, responsive and flexible native ad units that will help to tell your brand's story</div><a class="formats-tab__btn button button-link" href="#">See in Action</a>
+                                    </div>
+                                </div>
+                                <div class="formats__tabs-item formats-tab" id="tab-3"><img class="desktop-hidden" src="img/icons/tab-3.svg">
+                                    <div class="formats-tab__title title-h4">Native video</div>
+                                    <div class="formats-tab__content">
+                                        <div class="formats-tab__text text-1">Storytell with highly engaging videos placed across MGID’s premium publisher network</div><a class="formats-tab__btn button button-link button-simple" href="#">See in Action</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="tab-item" id="tab-2"><img class="desktop-hidden" src="img/icons/tab-2.png">
-                                <div class="title-h4">Native widgets</div>
-                                <div class="tab-content">
-                                    <div class="text-1">Customizable, responsive and flexible native ad units that will help to tell your brand's story</div><a class="button button-link" href="#">See in Action</a>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="formats-tab__imgs"> <img class="active tab-image" id="tab-1" src="img/icons/tab-1.svg" alt="smart widget"><img class="tab-image" id="tab-2" src="img/icons/tab-2.svg" alt="native widgets"><img class="tab-image" id="tab-3" src="img/icons/tab-3.svg" alt="native video"></div>
+                        </div>
+                    </div>
+                    <div class="formats__circle circle formats__circle--1 parallax" data-rate="-0.4"></div>
+                    <div class="formats__circle circle formats__circle--2 parallax" data-rate="-0.4"></div>
+                    <div class="formats__circle circle formats__circle--3 parallax" data-rate="-0.4"></div>
+                </div>
+            </div>
+        </section>
+        <section class="studies" id="story">
+            <div class="container">
+                <div class="studies__wrapper wrapper">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="studies__title title-h2">Case studies</h2>
+                            <div class="studies__text text-1">Driving brandformance for global and local brands</div>
+                        </div>
+                    </div>
+                    <div class="studies__slider">
+                        <div class="studies__slider-item studies-item">
+                            <div class="row align-items-center studies__content">
+                                <div class="col-lg-5"><img class="studies-item__logo mobile-hidden" src="img/icons/lexus-logo.svg" alt="lexus car logo">
+                                    <div class="studies-item__title title-h3 mobile-hidden">Lexus: <span>Recreating luxury for the whole family</span></div>
+                                    <div class="studies-item__text text-1 mobile-hidden">How Lexus used MGID to promote its new car model and increase the number of test-drive bookings.</div>
+                                </div>
+                                <div class="col-lg-7 d-flex justify-content-end studies__content studies__content--2">
+                                    <div class="studies-item__img"><img src="img/photos/lexus.jpg" alt="lexus car">
+                                        <div class="studies-item__bg"></div>
+                                    </div>
+                                    <div class="desktop-hidden"><img class="studies-item__logo" src="img/icons/lexus-logo.svg" alt="lexus car logo">
+                                        <div class="studies-item__title title-h3">Lexus: <span>Recreating luxury for the whole family</span></div>
+                                        <div class="studies-item__text text-1">How Lexus used MGID to promote its new car model and increase the number of test-drive bookings.</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="tab-item" id="tab-3"><img class="desktop-hidden" src="img/icons/tab-3.png">
-                                <div class="title-h4">Native video</div>
-                                <div class="tab-content">
-                                    <div class="text-1">Storytell with highly engaging videos placed across MGID’s premium publisher network</div><a class="button button-link button-simple" href="#">See in Action</a>
+                            <div class="row d-flex justify-content-between studies__statistic">
+                                <div class="col-lg-3 studies__statistic-content"><a class="studies__statistic-btn button button-simple" href="#">read more</a></div>
+                                <div class="col-lg-9 d-flex studies__statistic-content">
+                                    <div class="studies__statistic-item">
+                                        <div class="studies__statistic-sub--h1 sub-h1">0.5%</div>
+                                        <div class="studies__statistic-sub--h2 sub-h2">CTR</div>
+                                    </div>
+                                    <div class="studies__statistic-item">
+                                        <div class="studies__statistic-sub--h1 sub-h1">4,175</div>
+                                        <div class="studies__statistic-sub--h2 sub-h2">Clicks</div>
+                                    </div>
+                                    <div class="studies__statistic-item">
+                                        <div class="studies__statistic-sub--h1 sub-h1">2,345,246</div>
+                                        <div class="studies__statistic-sub--h2 sub-h2">Monthly impressions</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="studies__slider-item studies-item">
+                            <div class="row align-items-center studies__content">
+                                <div class="col-lg-5"><img class="studies-item__logo mobile-hidden" src="img/icons/dominos-logo.svg" alt="">
+                                    <div class="studies-item__title title-h3 mobile-hidden">Domino’s: <span>Delivering a delectable solution to the Indonesian region</span></div>
+                                    <div class="studies-item__text text-1 mobile-hidden">How MGID used imaging and CTA to increase online engagement and ordering for Domino’s. </div>
+                                </div>
+                                <div class="col-lg-7 d-flex justify-content-end studies__content studies__content--2">
+                                    <div class="studies-item__img"><img src="img/photos/dominos.jpg" alt="lexus car">
+                                        <div class="studies-item__bg"></div>
+                                    </div>
+                                    <div class="desktop-hidden"><img class="studies-item__logo" src="img/icons/lexus-logo.svg" alt="">
+                                        <div class="studies-item__title title-h3">Domino’s: <span>Delivering a delectable solution to the Indonesian region</span></div>
+                                        <div class="studies-item__text text-1">How MGID used imaging and CTA to increase online engagement and ordering for Domino’s. </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-between studies__statistic">
+                                <div class="col-lg-3 studies__statistic-content"><a class="studies__statistic-btn button button-simple" href="#">read more</a></div>
+                                <div class="col-lg-9 d-flex studies__statistic-content">
+                                    <div class="studies__statistic-item">
+                                        <div class="studies__statistic-sub--h1 sub-h1">0.71%</div>
+                                        <div class="studies__statistic-sub--h2 sub-h2">CTR</div>
+                                    </div>
+                                    <div class="studies__statistic-item">
+                                        <div class="studies__statistic-sub--h1 sub-h1">$0.03</div>
+                                        <div class="studies__statistic-sub--h2 sub-h2">cpc</div>
+                                    </div>
+                                    <div class="studies__statistic-item">
+                                        <div class="studies__statistic-sub--h1 sub-h1">166,700</div>
+                                        <div class="studies__statistic-sub--h2 sub-h2">Total Clicks</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="studies__slider-item studies-item">
+                            <div class="row align-items-center studies__content">
+                                <div class="col-lg-5"><img class="studies-item__logo mobile-hidden" src="img/icons/bank-logo.svg" alt="">
+                                    <div class="studies-item__title title-h3 mobile-hidden">HSBC Bank: <span>Serving the financial world through unique messaging </span></div>
+                                    <div class="studies-item__text text-1 mobile-hidden">How MGID created unique native format messages to generate leads for HSBC’s credit card services. </div>
+                                </div>
+                                <div class="col-lg-7 d-flex justify-content-end studies__content studies__content--2">
+                                    <div class="studies-item__img"><img src="img/photos/bank.jpg" alt="">
+                                        <div class="studies-item__bg"></div>
+                                    </div>
+                                    <div class="desktop-hidden"><img class="studies-item__logo" src="img/icons/bank-logo.svg" alt="">
+                                        <div class="studies-item__title title-h3">HSBC Bank:<span>Serving the financial world through unique messaging </span></div>
+                                        <div class="studies-item__text text-1">How MGID created unique native format messages to generate leads for HSBC’s credit card services. </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-between studies__statistic">
+                                <div class="col-lg-3 studies__statistic-content"><a class="studies__statistic-btn button button-simple" href="#">read more</a></div>
+                                <div class="col-lg-9 d-flex studies__statistic-content">
+                                    <div class="studies__statistic-item">
+                                        <div class="studies__statistic-sub--h1 sub-h1">$4</div>
+                                        <div class="studies__statistic-sub--h2 sub-h2" style="text-transform: lowercase">e<span style="text-transform: uppercase;">CPA</span></div>
+                                    </div>
+                                    <div class="studies__statistic-item">
+                                        <div class="studies__statistic-sub--h1 sub-h1">$0.06</div>
+                                        <div class="studies__statistic-sub--h2 sub-h2">CPC</div>
+                                    </div>
+                                    <div class="studies__statistic-item">
+                                        <div class="studies__statistic-sub--h1 sub-h1">74,883</div>
+                                        <div class="studies__statistic-sub--h2 sub-h2">Total Clicks</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="studies__slider-item studies-item">
+                            <div class="row align-items-center studies__content">
+                                <div class="col-lg-5"><img class="studies-item__logo mobile-hidden" src="img/icons/lazada-logo.svg" alt="">
+                                    <div class="studies-item__title title-h3 mobile-hidden">Lazada: <span>Connecting the SouthEast region to a new shopping experience </span></div>
+                                    <div class="studies-item__text text-1 mobile-hidden">How Lazada used MGID to promote an entire product category for its expansive eCommerce platform.</div>
+                                </div>
+                                <div class="col-lg-7 d-flex justify-content-end studies__content studies__content--2">
+                                    <div class="studies-item__img"><img src="img/photos/lazada.jpg" alt="">
+                                        <div class="studies-item__bg"></div>
+                                    </div>
+                                    <div class="desktop-hidden"><img class="studies-item__logo" src="img/icons/lazada-logo.svg" alt="">
+                                        <div class="studies-item__title title-h3">Lazada: <span>Connecting the SouthEast region to a new shopping experience </span></div>
+                                        <div class="studies-item__text text-1">How Lazada used MGID to promote an entire product category for its expansive eCommerce platform.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-between studies__statistic">
+                                <div class="col-lg-3 studies__statistic-content"><a class="studies__statistic-btn button button-simple" href="#">read more</a></div>
+                                <div class="col-lg-9 d-flex studies__statistic-content">
+                                    <div class="studies__statistic-item">
+                                        <div class="studies__statistic-sub--h1 sub-h1">$1.7</div>
+                                        <div class="studies__statistic-sub--h2 sub-h2" style="text-transform: lowercase">e<span style="text-transform: uppercase;">CPA</span></div>
+                                    </div>
+                                    <div class="studies__statistic-item">
+                                        <div class="studies__statistic-sub--h1 sub-h1">$0.06</div>
+                                        <div class="studies__statistic-sub--h2 sub-h2">CPC</div>
+                                    </div>
+                                    <div class="studies__statistic-item">
+                                        <div class="studies__statistic-sub--h1 sub-h1">5.2%</div>
+                                        <div class="studies__statistic-sub--h2 sub-h2">Conversion Rate</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="studies__slider-item studies-item">
+                            <div class="row align-items-center studies__content">
+                                <div class="col-lg-5"><img class="studies-item__logo mobile-hidden" src="img/icons/fca-logo.svg" alt="">
+                                    <div class="studies-item__title title-h3 mobile-hidden">FCA: <span>Experiencing a driving performance through native advertising</span></div>
+                                    <div class="studies-item__text text-1 mobile-hidden">How MGID helped to develop a non-intrusive yet effective way to get users to visit FCA’s car dealerships.</div>
+                                </div>
+                                <div class="col-lg-7 d-flex justify-content-end studies__content studies__content--2">
+                                    <div class="studies-item__img"><img src="img/photos/cars.jpg" alt="">
+                                        <div class="studies-item__bg"></div>
+                                    </div>
+                                    <div class="desktop-hidden"><img class="studies-item__logo" src="img/icons/fca-logo.svg" alt="">
+                                        <div class="studies-item__title title-h3">FCA:<span>Experiencing a driving performance through native advertising</span></div>
+                                        <div class="studies-item__text text-1">How MGID helped to develop a non-intrusive yet effective way to get users to visit FCA’s car dealerships.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-between studies__statistic">
+                                <div class="col-lg-3 studies__statistic-content"><a class="studies__statistic-btn button button-simple" href="#">read more</a></div>
+                                <div class="col-lg-9 d-flex studies__statistic-content">
+                                    <div class="studies__statistic-item">
+                                        <div class="studies__statistic-sub--h1 sub-h1">$96</div>
+                                        <div class="studies__statistic-sub--h2 sub-h2" style="text-transform: lowercase">e<span style="text-transform: uppercase;">CPA</span></div>
+                                    </div>
+                                    <div class="studies__statistic-item">
+                                        <div class="studies__statistic-sub--h1 sub-h1">$0.14</div>
+                                        <div class="studies__statistic-sub--h2 sub-h2">CPC</div>
+                                    </div>
+                                    <div class="studies__statistic-item">
+                                        <div class="studies__statistic-sub--h1 sub-h1">17,329</div>
+                                        <div class="studies__statistic-sub--h2 sub-h2">Total clicks</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="tab-imgs"><img class="active tab-image" id="tab-1" src="img/icons/tab-1.png" alt="smart widget"><img class="tab-image" id="tab-2" src="img/icons/tab-2.png" alt="native widgets"><img class="tab-image" id="tab-3" src="img/icons/tab-3.png" alt="native video"></div>
-                    </div>
                 </div>
-                <div class="circle circle-1 parallax" data-rate="-0.4"></div>
-                <div class="circle circle-2 parallax" data-rate="-0.4"></div>
-                <div class="circle circle-3 parallax" data-rate="-0.4"></div>
             </div>
-        </div>
-    </section>
-    <section class="studies">
-        <div class="container">
-            <div class="wrapper">
+        </section>
+        <section class="control">
+            <div class="container">
                 <div class="row">
-                    <div class="col-12 text-center">
-                        <div class="title-h2">Case studies</div>
-                        <div class="text-1">Driving brandformance for global and local brands</div>
+                    <div class="col-lg-6">
+                        <div class="control__subtitle sub-h2">BoosT your campaing</div>
+                        <h2 class="control__title title-h2">Get 100% control over your ad campaigns</h2>
                     </div>
                 </div>
-                <div class="slider-2">
-                    <div class="slider-item">
-                        <div class="row align-items-center content">
-                            <div class="col-lg-5"><img class="car-logo" src="img/icons/lexus-logo.svg" alt="lexus car logo">
-                                <div class="title-h3 mobile-hidden">Lexus: <span>Recreating luxury for the whole family</span></div>
-                                <div class="text-1 mobile-hidden">How Lexus used MGID to promote its new car model and increase the number of test-drive bookings.</div>
-                            </div>
-                            <div class="col-lg-7 d-flex justify-content-end content-2">
-                                <div class="car"><img class="desktop-hidden" src="img/icons/car-logo-1.png"><img src="img/photos/car-1.jpg" alt="lexus car">
-                                    <div class="car-bg"></div>
-                                </div>
-                                <div class="desktop-hidden">
-                                    <div class="title-h3">Lexus: <span>Recreating luxury for the whole family</span></div>
-                                    <div class="text-1">How Lexus used MGID to promote its new car model and increase the number of test-drive bookings.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex justify-content-between statistic">
-                            <div class="col-lg-3 statistic-content"><a class="button button-simple" href="#">rEAD mORE</a></div>
-                            <div class="col-lg-9 d-flex statistic-content">
-                                <div class="statistic-item">
-                                    <div class="sub-h1">0.5%</div>
-                                    <div class="sub-h2">CTR</div>
-                                </div>
-                                <div class="statistic-item">
-                                    <div class="sub-h1">4,175</div>
-                                    <div class="sub-h2">Clicks</div>
-                                </div>
-                                <div class="statistic-item">
-                                    <div class="sub-h1">2,345,246</div>
-                                    <div class="sub-h2">Monthly impressions</div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="row control__items">
+                    <div class="col-lg-4 d-flex justify-content-center flex-column control__item">
+                        <div class="control__item-img"> <img src="img/icons/control-1.png" alt=""></div>
+                        <div class="control__item-title title-h3">Pricing</div>
+                        <div class="control__item-text text-2">Define your CPC and daily budget & pay only for clicks you receive.</div>
                     </div>
-                    <div class="slider-item">
-                        <div class="row align-items-center content">
-                            <div class="col-lg-5"><img class="car-logo" src="img/icons/lexus-logo.svg" alt="lexus car logo">
-                                <div class="title-h3 mobile-hidden">Lexus: <span>Recreating luxury for the whole family</span></div>
-                                <div class="text-1 mobile-hidden">How Lexus used MGID to promote its new car model and increase the number of test-drive bookings.</div>
-                            </div>
-                            <div class="col-lg-7 d-flex justify-content-end content-2">
-                                <div class="car"><img class="desktop-hidden" src="img/icons/car-logo-1.png"><img src="img/photos/car-1.jpg" alt="lexus car">
-                                    <div class="car-bg"></div>
-                                </div>
-                                <div class="desktop-hidden">
-                                    <div class="title-h3">Lexus: <span>Recreating luxury for the whole family</span></div>
-                                    <div class="text-1">How Lexus used MGID to promote its new car model and increase the number of test-drive bookings.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex justify-content-between statistic">
-                            <div class="col-lg-3 statistic-content"><a class="button button-simple" href="#">rEAD mORE</a></div>
-                            <div class="col-lg-9 d-flex statistic-content">
-                                <div class="statistic-item">
-                                    <div class="sub-h1">0.5%</div>
-                                    <div class="sub-h2">CTR</div>
-                                </div>
-                                <div class="statistic-item">
-                                    <div class="sub-h1">4,175</div>
-                                    <div class="sub-h2">Clicks</div>
-                                </div>
-                                <div class="statistic-item">
-                                    <div class="sub-h1">2,345,246</div>
-                                    <div class="sub-h2">Monthly impressions</div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-lg-4 d-flex justify-content-center flex-column control__item">
+                        <div class="control__item-img"> <img src="img/icons/control-2.png" alt=""></div>
+                        <div class="control__item-title title-h3">Targeting</div>
+                        <div class="control__item-text text-2">That is as detailed as GEO, OS, browser, traffic source and sub-IDs</div>
                     </div>
-                    <div class="slider-item">
-                        <div class="row align-items-center content">
-                            <div class="col-lg-5"><img class="car-logo" src="img/icons/lexus-logo.svg" alt="lexus car logo">
-                                <div class="title-h3 mobile-hidden">Lexus: <span>Recreating luxury for the whole family</span></div>
-                                <div class="text-1 mobile-hidden">How Lexus used MGID to promote its new car model and increase the number of test-drive bookings.</div>
-                            </div>
-                            <div class="col-lg-7 d-flex justify-content-end content-2">
-                                <div class="car"><img class="desktop-hidden" src="img/icons/lexus-logo.svg"><img src="img/photos/car-1.jpg" alt="lexus car">
-                                    <div class="car-bg"></div>
-                                </div>
-                                <div class="desktop-hidden">
-                                    <div class="title-h3">Lexus: <span>Recreating luxury for the whole family</span></div>
-                                    <div class="text-1">How Lexus used MGID to promote its new car model and increase the number of test-drive bookings.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex justify-content-between statistic">
-                            <div class="col-lg-3 statistic-content"><a class="button button-simple" href="#">rEAD mORE</a></div>
-                            <div class="col-lg-9 d-flex statistic-content">
-                                <div class="statistic-item">
-                                    <div class="sub-h1">0.5%</div>
-                                    <div class="sub-h2">CTR</div>
-                                </div>
-                                <div class="statistic-item">
-                                    <div class="sub-h1">4,175</div>
-                                    <div class="sub-h2">Clicks</div>
-                                </div>
-                                <div class="statistic-item">
-                                    <div class="sub-h1">2,345,246</div>
-                                    <div class="sub-h2">Monthly impressions</div>
-                                </div>
-                            </div>
+                    <div class="col-lg-4 d-flex justify-content-center flex-column control__item">
+                        <div class="control__item-img"> <img src="img/icons/control-3.png" alt=""></div>
+                        <div class="control__item-title title-h3">Campaign management</div>
+                        <div class="control__item-text text-2">Track, analyze &#38; optimize campaigns straight from the dashboard </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="start">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-5 text-center"><img class="start__img" src="img/icons/start.svg" alt="click and circles icons">
+                        <div class="start__content">
+                            <div class="start__content-title title-h2">Let’s Get Started</div>
+                            <div class="start__content-text text-1">And receive access to the audiences generated by over 32,000 publishers </div><a class="start__content-btn button button-main" href="#">BECOME AN adVERTISER</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="control">
-        <div class="container">
-            <div class="row title">
-                <div class="col-lg-6">
-                    <div class="sub-h2">BoosT your campaing</div>
-                    <div class="title-h2">Get 100% control over your ad campaigns</div>
-                </div>
-            </div>
-            <div class="row items">
-                <div class="col-lg-4 d-flex justify-content-end flex-column item">
-                    <div class="item-img"> <img src="img/icons/control-1.png" alt=""></div>
-                    <div class="title-h3">Pricing</div>
-                    <div class="text-2">Define your CPC and daily budget & pay only for clicks you receive.</div>
-                </div>
-                <div class="col-lg-4 d-flex justify-content-end flex-column item">
-                    <div class="item-img"> <img src="img/icons/control-2.png" alt=""></div>
-                    <div class="title-h3">Targeting</div>
-                    <div class="text-2">That is as detailed as GEO, OS, browser, traffic source and sub-IDs</div>
-                </div>
-                <div class="col-lg-4 d-flex justify-content-end flex-column item">
-                    <div class="item-img"> <img src="img/icons/control-3.png" alt=""></div>
-                    <div class="title-h3">Campaign management</div>
-                    <div class="text-2">Track, analyze &#38; optimize campaigns straight from the dashboard </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="start">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-5 text-center"><img src="img/icons/start.svg" alt="click and circles icons">
-                    <div class="content">
-                        <div class="title-h2">Let’s Get Started</div>
-                        <div class="text-1">And receive access to the audiences generated by over 32,000 publishers </div><a class="button button-main" href="#">BECOME AN ADVERTISER</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer class="footer">
         <div class="container-special">
-            <div class="row footer-top">
+            <div class="row footer__top">
                 <div class="col-lg-6">
-                    <ul class="logos d-flex">
-                        <li><img src="img/icons/footer-logo-1.svg" alt=""></li>
-                        <li><img src="img/icons/footer-logo-2.svg" alt=""></li>
-                        <li><img src="img/icons/footer-logo-3.svg" alt=""></li>
-                        <li><img src="img/icons/footer-logo-4.svg" alt=""></li>
-                        <li><img src="img/icons/footer-logo-5.svg" alt=""></li>
-                        <li><img src="img/icons/footer-logo-6.svg" alt=""></li>
-                        <li><img src="img/icons/footer-logo-7.svg" alt=""></li>
+                    <ul class="footer__logos d-flex">
+                        <li class="footer__logos-item"><img class="footer__logos-img" src="img/icons/footer-logo-1.svg" alt=""></li>
+                        <li class="footer__logos-item"><img class="footer__logos-img" src="img/icons/footer-logo-2.svg" alt=""></li>
+                        <li class="footer__logos-item"><img class="footer__logos-img" src="img/icons/footer-logo-3.svg" alt=""></li>
+                        <li class="footer__logos-item"><img class="footer__logos-img" src="img/icons/footer-logo-4.svg" alt=""></li>
+                        <li class="footer__logos-item"><img class="footer__logos-img" src="img/icons/footer-logo-5.svg" alt=""></li>
+                        <li class="footer__logos-item"><img class="footer__logos-img" src="img/icons/footer-logo-6.svg" alt=""></li>
+                        <li class="footer__logos-item"><img class="footer__logos-img" src="img/icons/footer-logo-7.svg" alt=""></li>
                     </ul>
                 </div>
-                <div class="col-lg-6 d-flex align-items-center awards">
-                    <div class="text-2">Innovative Ad Network</div>
-                    <div class="awards-img"><img src="img/icons/awards.png" alt=""></div>
+                <div class="col-lg-6 d-flex align-items-center footer__awards">
+                    <div class="footer__awards-text text-2">Innovative Ad Network</div>
+                    <div class="footer__awards-img"><img src="img/icons/awards.png" alt=""></div>
                 </div>
             </div>
-            <div class="row align-items-center footer-bottom">
-                <div class="col-lg-4 footer-col">
-                    <div class="sub-h2 rights">© 2020 MGID Inc. All rights reserved.</div>
+            <div class="row align-items-center footer__bottom">
+                <div class="col-lg-4 footer__col">
+                    <div class="sub-h2 footer__rights">© 2020 MGID Inc. All rights reserved.</div>
                 </div>
-                <div class="col-lg-4 footer-col">
-                    <ul class="footer-menu d-flex justify-content-center footer-menu">
-                        <li><a class="sub-h2" href="#">Privacy Policy</a></li>
-                        <li><a class="sub-h2" href="#">Terms of Service</a></li>
+                <div class="col-lg-4 footer__col">
+                    <ul class="footer__menu d-flex justify-content-center footer-menu">
+                        <li class="footer-menu__item"><a class="footer-menu__link sub-h2" href="#">Privacy Policy</a></li>
+                        <li class="footer-menu__item"><a class="footer-menu__link sub-h2" href="#">Terms of Service</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 footer-col">
-                    <ul class="d-flex align-items-center footer-social">
-                        <li><a href="#"><img src="img/icons/facebook.svg" alt=""></a></li>
-                        <li><a href="#"><img src="img/icons/twitter.svg" alt=""></a></li>
-                        <li> <a href="#"><img src="img/icons/linkedin.svg" alt=""></a></li>
-                        <li><a href="#"><img src="img/icons/instagram.svg" alt=""></a></li>
-                        <li><a href="#"><img src="img/icons/youtube.svg" alt=""></a></li>
+                <div class="col-lg-4 footer__col">
+                    <ul class="d-flex align-items-center footer__social">
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"><img src="img/icons/facebook.svg" alt=""></a></li>
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"><img src="img/icons/twitter.svg" alt=""></a></li>
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"><img src="img/icons/linkedin.svg" alt=""></a></li>
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"><img src="img/icons/instagram.svg" alt=""></a></li>
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"><img src="img/icons/youtube.svg" alt=""></a></li>
                     </ul>
                 </div>
             </div>
