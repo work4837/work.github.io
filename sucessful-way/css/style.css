@@ -1,0 +1,229 @@
+:root {
+    --yellow: #ebbc00;
+    --blue: #0038ff;
+    --grey: #e9e9e9;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../fonts/Lora/Lora-Regular.eot');
+    src: url('../fonts/Lora/Lora-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lora/Lora-Regular.woff2') format('woff2'),
+        url('../fonts/Lora/Lora-Regular.woff') format('woff'),
+        url('../fonts/Lora/Lora-Regular.ttf') format('truetype'),
+        url('../fonts/Lora/Lora-Regular.svg#Lora-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, 
+body {
+    font-family: 'Lora', sans-serif;
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 120px 0 0;
+}
+
+.container-lg {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container-sm {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.title-h1 {
+    font-size: 72px;
+    line-height: 85px;
+}
+.title-h2 {
+    font-size: 48px;
+    text-align: center;
+}
+.sub-h1 {
+    font-size: 24px;
+}
+.text {
+    font-size: 1rem;
+}
+.btn {
+    height: 60px;
+    padding: 0 15px;
+    border-radius: 20px;
+    box-shadow: 0px 13px 7.28px 0.72px rgba(121, 91, 91, 0.26);   
+    border: none;
+    font-family: 'Lora', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    transition: ease .3s;
+    cursor: pointer;
+}
+.btn:focus {
+    outline: none;
+} 
+.blue-color {
+    color: var(--blue);
+}
+
+/* =========================================================================================================================================
+Header
+========================================================================================================================================= */
+.header {
+    padding: 15px 0;
+    background-color: #0e1c8f;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo-img {
+    width: 140px;
+}
+
+.header__menu-btn {
+}
+
+.header__menu {
+    display: flex;
+}
+
+.header__menu-item {
+    margin-left: 100px;
+}
+.header__menu-link {
+    font-family: 'Lora', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* =========================================================================================================================================
+Закрытый клуб «Путь к успеху»
+========================================================================================================================================= */
+.main {
+    position: relative;
+    padding: 180px 0;
+    text-align: center;
+    color: #fff;
+}
+.main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.main__wrapper {
+    position: relative;
+    z-index: 10;
+}
+
+.main__content {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.main__title {
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 2.7px rgba(0, 0, 0, 0.5);
+}
+
+.main__text {
+    margin-bottom: 35px;
+    text-shadow: 0px 0px 2.7px rgba(0, 0, 0, 0.5);
+    line-height: 36px;
+}
+
+.main__btn-wrapper {
+}
+
+.main__btn {
+    width: 250px;
+    background-color: var(--yellow);
+}
+
+.btn {
+}
+.main__arrow {
+}
+.main__arrow-img {
+}
+.main__arrow-text {
+}
+
+/* =========================================================================================================================================
+Закрытый клуб «Путь к успеху»
+========================================================================================================================================= */
+.about {
+}
+
+.about__title {
+    margin-bottom: 35px;
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.about__content {
+}
+
+.about__content:nth-child(1) {
+    padding-right: 35px;
+}
+
+.about__content:nth-child(1) .about__item:nth-child(1) {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.about__content:nth-child(2) {
+    text-align: center;
+}
+
+.about__content-img:nth-child(1) {
+    margin-bottom: 15px;
+    width: 400px;
+}
+
+.about__content-img:nth-child(2) {
+    width: 300px;
+}
+
+.about__item {
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: var(--grey);
+}
+
+.about__btn-wrapper {
+    margin-top: 90px;
+    text-align: center;
+}
+
+.about__btn {
+    width: 350px;
+    background-color: var(--yellow);
+}
+
+.btn {
+}
+.about__arrow {
+}
+.about__arrow-text {
+}
