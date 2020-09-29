@@ -19,6 +19,19 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Noteworthy';
+    src: url('../fonts/Noteworthy/Bold/Noteworthy-Bold.eot');
+    src: url('../fonts/Noteworthy/Bold/Noteworthy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Noteworthy/Bold/Noteworthy-Bold.woff2') format('woff2'),
+        url('../fonts/Noteworthy/Bold/Noteworthy-Bold.woff') format('woff'),
+        url('../fonts/Noteworthy/Bold/Noteworthy-Bold.ttf') format('truetype'),
+        url('../fonts/Noteworthy/Bold/Noteworthy-Bold.svg#Noteworthy-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 html, 
 body {
     font-family: 'Lora', sans-serif;
@@ -47,6 +60,7 @@ section {
 }
 
 .title-h2 {
+    margin-bottom: 35px;
     font-size: 48px;
     text-align: center;
 }
@@ -57,7 +71,7 @@ section {
 
 .text {
     font-size: 1rem;
-    line-height: 20px;
+    line-height: 22px;
 }
 
 .btn {
@@ -69,12 +83,15 @@ section {
     font-family: 'Lora', sans-serif;
     font-size: 24px;
     font-weight: 700;
-    transition: ease .3s;
+    transition: ease .5s;
     cursor: pointer;
 }
 .btn:focus {
     outline: none;
 } 
+.btn:hover {
+    box-shadow: none;
+}
 
 .blue-color {
     color: var(--blue);
@@ -86,6 +103,12 @@ section {
 
 .red-color {
     color: var(--red);
+}
+
+.arrow-text {
+    font-family: 'Noteworthy', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 /* =========================================================================================================================================
@@ -186,10 +209,6 @@ Header
 .about {
 }
 
-.about__title {
-    margin-bottom: 35px;
-}
-
 .about__wrapper {
     display: flex;
     justify-content: space-between;
@@ -229,18 +248,65 @@ Header
 }
 
 .about__btn-wrapper {
-    margin-top: 90px;
-    text-align: center;
+    position: relative;
+    width: 350px;
+    margin: 90px auto 0;
 }
 
 .about__btn {
-    width: 350px;
+    width: 100%;
     background-color: var(--yellow);
 }
 
-.btn {
-}
 .about__arrow {
+    position: absolute;
+    top: -100%;
+    right: -50px;
+    display: flex;
+    align-items: center;
+}
+.about__arrow-img {
+    position: absolute;
+    bottom: -6px;
+    margin-right: 15px;
+    width: 50px;
 }
 .about__arrow-text {
+    padding-left: 65px;
+}
+
+/* =========================================================================================================================================
+Портрет участников
+========================================================================================================================================= */
+.members {
+}
+.container-sm {
+}
+.members__title {
+}
+.title-h2 {
+}
+.members__stat {
+}
+.members__average {
+}
+.members__average-item {
+}
+.members__circles {
+}
+.members__circle {
+}
+.members__circle-stat {
+}
+.members__circle-subtitle {
+}
+.members__circle-numbers {
+}
+.members__circle-number {
+}
+.members__circle-part {
+}
+.members__btn {
+}
+.btn {
 }
