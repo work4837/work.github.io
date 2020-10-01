@@ -42,6 +42,10 @@ section {
     padding: 120px 0 0;
 }
 
+img {
+    width: 100%;
+}
+
 .container-lg {
     max-width: 1170px;
     margin: 0 auto;
@@ -78,6 +82,9 @@ section {
 }
 
 .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 60px;
     padding: 0 15px;
     border-radius: 20px;
@@ -85,9 +92,10 @@ section {
     border: none;
     font-family: 'Lora', sans-serif;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 700; 
     transition: ease .5s;
     cursor: pointer;
+    text-decoration: none;
 }
 .btn:focus {
     outline: none;
@@ -118,6 +126,26 @@ section {
     width: 140px;
 }
 
+.input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: 4px solid rgb(65, 59, 136);
+}
+.input:focus {
+    outline: none;
+}
+.input::placeholder,
+.input {
+    font-family: 'Lora', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+
 /* =========================================================================================================================================
 Header
 ========================================================================================================================================= */
@@ -140,13 +168,15 @@ Header
     border-radius: 5px;
     background-color: var(--blue);
 }
-.header__menu-btn.active .header__menu-btn span {
+.header__menu-btn.active span {
     transform: translate(-50%, -50%) scale(0);
 }
-.header__menu-btn.active .header__menu-btn::before {
+.header__menu-btn.active::before {
+    top: 19px;
     transform: translateX(-50%) rotate(45deg);
 }
-.header__menu-btn.active .header__menu-btn::after {
+.header__menu-btn.active::after {
+    bottom: 19px;
     transform: translateX(-50%) rotate(-45deg);
 }
 .header__menu-btn span,
@@ -157,7 +187,7 @@ Header
     width: 25px;
     height: 2px;
     background-color: #fff;
-    transition: ease .5s;
+    transition: .3s;
 }
 .header__menu-btn::before,
 .header__menu-btn::after {
@@ -288,7 +318,7 @@ Header
 }
 
 .about__content-img:nth-child(2) {
-    width: 300px;
+    max-width: 300px;
 }
 
 .about__item {
@@ -305,8 +335,8 @@ Header
 }
 
 .about__btn {
-    width: 100%;
     background-color: var(--yellow);
+    color: #000;
 }
 
 .about__arrow {
@@ -462,12 +492,11 @@ Header
 }
 
 .members__btn {
-    display: block;
     position: absolute;
     bottom: 250px;
     left: 0;
     right: 0;
-    width: 300px; 
+    max-width: 300px; 
     margin: 0 auto;
     background-color: var(--blue);
     color: #fff;
@@ -484,7 +513,6 @@ Header
     background-repeat: no-repeat;
     z-index: -1;
 }
-
 /* =========================================================================================================================================
 Преимущества
 ========================================================================================================================================= */
@@ -502,6 +530,7 @@ Header
 }
 
 .adv__item {
+    flex: 33.33%;
     padding: 0 15px;
     text-align: center;
 }
@@ -516,7 +545,7 @@ Header
 Отзывы
 ========================================================================================================================================= */
 .reviews {
-    padding-bottom: 1000px;
+    padding-bottom: 800px;
     background-image: url(../images/backgrounds/squares.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -536,12 +565,16 @@ Contact form
     max-width: 800px;
     margin: 0 auto 45px;
     text-align: center;
+    font-weight: 700;
+    font-stretch: ultra-condensed;
+    text-shadow: 0px 5px 8.46px rgba(0, 0, 0, 0.28);
 }
 
 .contact__form {
+    position: relative;
     max-width: 500px;
     margin: 0 auto;
-    padding: 25px;
+    padding: 25px 60px 120px 25px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     box-shadow: 0px 17px 9px 0px rgba(0, 0, 0, 0.2);
@@ -551,6 +584,26 @@ Contact form
 
 .contact__form-subtitle {
     margin-bottom: 20px;
+    margin-right: -35px;
+    padding: 0 15px;
+    font-size: 30px;
+}
+
+.contact__select-item img {
+    width: 16px;
+}
+
+.contact__btn {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    right: 0;
+    max-width: 250px;
+    width: 100%;
+    margin: 45px auto 0;
+    border-radius: 40px;
+    background-color: var(--blue);
+    color: #fff;
 }
 
 /* =========================================================================================================================================
@@ -590,9 +643,92 @@ Footer
     .header__menu-item {
         margin-left: 60px;
     }
+
+    .about__wrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .about__content:nth-child(1) {
+        padding-right: 0;
+    }
+
+    .about__content-img:nth-child(1) {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .about__content:nth-child(1) {
+        margin-bottom: 20px;
+    }
+
+    .about__content:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .members__circle {
+        flex-wrap: wrap;
+    }
+
+    .members {
+        padding-bottom: 60px;
+        background-image: none;
+        background-color: var(--blue);
+    }
+
+    .members__btn {
+        position: static;
+        background-color: var(--yellow);
+        color: #000;
+    }
+
+    .members__stat {
+        padding-bottom: 60px;
+    }
+
+    .members__average {
+        margin: 30px auto 60px;
+    }
+
+    .members__circle-stat {
+        margin-bottom: 20px;
+        order: 2;
+    }
+
+    .members__statistic-circle {
+        margin-bottom: 45px;
+        order: 1;
+    }
+
+    .members__circle:first-child .members__circle-stat::before {
+        top: -40px;
+        right: auto;
+        left: 50%;
+        border-left: 25px solid transparent;
+        border-bottom: 25px solid #fff;
+        transform: translateY(0) translateX(-50%);
+    }
+    .members__circle:last-child .members__circle-stat::before {
+        top: -40px;
+        left: 50%;
+        border-right: 25px solid transparent;
+        border-bottom: 25px solid #fff;
+        transform: translateY(0) translateX(-50%);
+    }
+
+    .members__inner-circle {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    section {
+        padding: 60px 0 0;
+    }
+
     .title-h1 {
         font-size: 48px;
         line-height: 50px;
@@ -600,7 +736,7 @@ Footer
 
     .title-h2 {
         font-size: 36px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     } 
 
     .title-h3 {
@@ -643,6 +779,58 @@ Footer
         margin-left: 0;
         margin-bottom: 15px;
     }
+
+    .main__text {
+        line-height: 20px;
+    }
+
+    .adv__items {
+        flex-wrap: wrap;
+    }
+
+    .adv__item {
+        flex: 100%;
+        margin-bottom: 35px;
+    }
+
+    .tablet-hidden {
+        display: none;
+    }
+
+    .about__btn-wrapper{
+        margin: 35px auto 0;
+    }
+
+    .members {
+        overflow-x: hidden;
+    }
+
+    .members__stat {
+        padding-bottom: 0;
+    }
+
+    .members__circle-number span {
+        padding-left: 25px;
+        font-size: 16px;
+    }
+
+    .members__circle-number span::before {
+        width: 15px;
+        height: 15px;
+    }
+
+    .adv {
+        padding-bottom: 60px;
+    }
+
+    .reviews {
+        background-image: none;
+        background-color: var(--blue);
+    }
+
+    .input {
+        border: 2px solid  rgb(65, 59, 136);
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -663,8 +851,35 @@ Footer
     .header {
         padding: 10px 0;
     }
+
+    #chart1,
+    #chart2 {
+        width: 550px !important;
+    }
+
+    .members__inner-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .footer__scroll-top img {
+        width: 40px;
+    }
 }
 
 @media screen and (max-width: 350px) {
    
+}
+
+@media screen and (min-width: 769px) {
+    .header__nav {
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #chart1,
+    #chart2 {
+        width: 600px !important;
+    }
 }

@@ -23,7 +23,7 @@
                 </div>
                 <nav class="header__nav" id="menu">
                     <ul class="header__menu">
-                        <li class="header__menu-item"><a href="#" class="header__menu-link">Вступить в команду</a></li>
+                        <li class="header__menu-item"><a href="#form" class="header__menu-link">Вступить в команду</a></li>
                         <li class="header__menu-item"><a href="#statistic" class="header__menu-link scroll-link">Статистика</a></li>
                         <li class="header__menu-item"><a href="#reviews" class="header__menu-link scroll-link">Отзывы</a></li>
                     </ul>
@@ -43,6 +43,7 @@
                     <div class="main__btn-wrapper">
                         <a href="#form" class="main__btn btn scroll-link">Оставить заявку!</a>
                     </div>
+                    <!-- <video class="main__video" src=""></video> -->
                 </div>
             </div>
         </section>
@@ -50,27 +51,29 @@
         <section class="about">
             <div class="container-sm">
                 <h2 class="about__title title-h2">Обо мне</h2>
-                <div class="about__wrapper">
-                    <div class="about__content">
-                        <div class="about__item sub-h1">“6 лет назад я остро нуждался в окружении единомышленников„</div>
-                        <p class="about__item text">
-                            <span class="blue-color">Я начал свой путь</span> в 2012г  и в  2014г я достиг поставленных задач,  но мне чего-то нехватало, тогда я понял что мне нужна команда  единомышленников  и с тех пор, моя команда моя сила и конкурентное пермущество перед остальными... 
-                        </p>
-                        <p class="about__item text">
-                            <span class="blue-color">Знания и опыт</span> главный фактор человеческой деятельности. Все остальное инструменты. Я владею современными методами и техниками, знаю, как использовать ресурсы, чтобы все заработало именно так, как нужно!
-                        </p>
+                <div class="about__block">
+                    <div class="about__wrapper">
+                        <div class="about__content">
+                            <div class="about__item sub-h1">“6 лет назад я остро нуждался в окружении единомышленников„</div>
+                            <p class="about__item text">
+                                <span class="blue-color">Я начал свой путь</span> в 2012г  и в  2014г я достиг поставленных задач,  но мне чего-то нехватало, тогда я понял что мне нужна команда  единомышленников  и с тех пор, моя команда моя сила и конкурентное пермущество перед остальными... 
+                            </p>
+                            <p class="about__item text">
+                                <span class="blue-color">Знания и опыт</span> главный фактор человеческой деятельности. Все остальное инструменты. Я владею современными методами и техниками, знаю, как использовать ресурсы, чтобы все заработало именно так, как нужно!
+                            </p>
+                        </div>
+                        <div class="about__content">
+                            <img class="about__content-img" src="images/icons/about.png" alt="">
+                            <img class="about__content-img" src="images/icons/audio.png" alt="">
+                        </div>
                     </div>
-                    <div class="about__content">
-                        <img class="about__content-img" src="images/icons/about.png" alt="">
-                        <img class="about__content-img" src="images/icons/audio.png" alt="">
-                    </div>
+                    <p class="about__item text" id="replace_text">
+                        <span class="blue-color">Моя задача</span> заключается в том что бы без лишних слов, наглядно показать вам  как это происходит, вы получите бесценные знания которые использую я и моя команда на протяжении многих лет в свою пользу!Ваша задача выслушать, посмотреть на это изнутри и принять решения - хотите ли вы быть частью крутой команды, самой быстрорастущей в России <span class="pink-color">?</span>  
+                    </p> 
                 </div>
-                <p class="about__item text">
-                    <span class="blue-color">Моя задача</span> заключается в том что бы без лишних слов, наглядно показать вам  как это происходит, вы получите бесценные знания которые использую я и моя команда на протяжении многих лет в свою пользу!Ваша задача выслушать, посмотреть на это изнутри и принять решения - хотите ли вы быть частью крутой команды, самой быстрорастущей в России <span class="pink-color">?</span>  
-                </p> 
                 <div class="about__btn-wrapper">
-                    <button class="about__btn btn">ВСТУПИТЬ В КОМАНДУ </button>
-                    <div class="about__arrow">
+                    <a href="#form" class="about__btn btn">ВСТУПИТЬ В КОМАНДУ </a>
+                    <div class="about__arrow tablet-hidden">
                         <img class="about__arrow-img" src="images/icons/arrow-down.png" alt="">
                         <p class="about__arrow-text arrow-text"> <span class="red-color">- ДА!</span> <br> Тогда  кликай    сюда</p>
                     </div>
@@ -140,15 +143,14 @@
                             </div>
                         </div>
                     </div>
-                    <button class="members__btn btn">Регистрация</button>
+                    <a href="#form" class="members__btn btn">Регистрация</a>
                 </div>
-
             </div>
         </section>
 
         <section class="adv">
             <div class="container-lg">
-                <h2 class="adv__title title-h2">Ght</h2>
+                <h2 class="adv__title title-h2">Преимущества</h2>
                 <div class="adv__items">
                     <div class="adv__item">
                         <div class="adv__item-img">
@@ -185,12 +187,12 @@
                     </div>
                 </div>
             </div>
-        </section>
-
+        </section> 
+     
         <section class="reviews" id="reviews">
             <div class="container-lg">
                 <h2 class="reviews__title title-h2">Отзывы</h2>
-            </div>
+            </div> 
         </section>
 
         <section class="contact" id="form">
@@ -198,9 +200,12 @@
                 <h3 class="contact__title title-h3">Двигайтесь вперед вместе с нами, количество мест <span class="blue-color">ограничено!</span></h3>
                 <div class="contact__form">
                     <div class="contact__form-subtitle sub-h1">Доступ к бесплатной регистариции открыт</div>
-                    <form action="#">
-                       
+                    <form id="form" action="#">
+                        <input class="input" type="text" placeholder="Имя">
+                        <input class="input" type="text" placeholder="Фамилия">
+                        <input id="phone_mask" class="input" type="text" placeholder="+7 (999) 999-99-99">
                     </form>
+                    <button class="contact__btn btn" type="submit">Подать заявку</button>
                 </div>
             </div>
         </section>
@@ -222,6 +227,7 @@
     </footer> 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
+    <script src="js/plugins/jquery.maskedinput.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
     <script src="js/main.js"></script>
   </body>
